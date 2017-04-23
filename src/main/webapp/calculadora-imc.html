@@ -84,19 +84,19 @@ http://www.tooplate.com/view/2076-zentro
     var calculo = (10000*peso/quadrado);
 
         if(calculo<18.5){   
-            alert("Você está magro com esse IMC " + calculo);
+            alert("Você está magro com esse IMC " + calculo.toFixed(2));
         }
         else if(calculo>=18.5 && calculo<24.9){
-            alert("Você está normal com esse IMC: " + calculo);
+            alert("Você está normal com esse IMC: " + calculo.toFixed(2));
         }
         else if(calculo>=25 && calculo<29.9) {
-            alert("Você está com sobre peso com esse IMC: " + calculo);
+            alert("Você está com sobre peso com esse IMC: " + calculo.toFixed(2));
         }
         else if(calculo>=30 && calculo<39.9) {
-            alert("Você está com obesidade com esse IMC: " + calculo);
+            alert("Você está com obesidade com esse IMC: " + calculo.toFixed(2));
         }
         else if (calculo>40)
-        alert("Você está com obesidade grave com esse IMC: " + calculo);
+        alert("Você está com obesidade grave com esse IMC: " + calculo.toFixed(2));
     }
 </script>
 
