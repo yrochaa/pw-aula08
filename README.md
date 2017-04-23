@@ -1,2 +1,6 @@
 # pw-aula08
-Criar uma Calcular IMC
+
+## Calculadora IMC.
+
+Criar um site que tenha uma calculadora IMC, com as técnicas e ferramentas apresentadas em sala de aula.
+
