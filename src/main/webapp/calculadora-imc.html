@@ -83,20 +83,26 @@ http://www.tooplate.com/view/2076-zentro
 
     var calculo = (10000*peso/quadrado);
 
-        if(calculo<18.5){   
-            alert("Você está magro com esse IMC " + calculo.toFixed(2));
+        if(calculo<17){   
+            alert("Você está MUITO ABAIXO DO PESO ! IMC " + calculo.toFixed(2));
+        }
+		else if(calculo>=17 && calculo<=18.5){   
+            alert("Você está ABAIXO DO PESO ! IMC " + calculo.toFixed(2));
         }
         else if(calculo>=18.5 && calculo<24.9){
-            alert("Você está normal com esse IMC: " + calculo.toFixed(2));
+            alert("Você está com o PESO NORMAL ! IMC: " + calculo.toFixed(2));
         }
         else if(calculo>=25 && calculo<29.9) {
-            alert("Você está com sobre peso com esse IMC: " + calculo.toFixed(2));
+            alert("Você está ACIMA DO PESO ! IMC: " + calculo.toFixed(2));
         }
-        else if(calculo>=30 && calculo<39.9) {
-            alert("Você está com obesidade com esse IMC: " + calculo.toFixed(2));
+        else if(calculo>=30 && calculo<34.9) {
+            alert("Você está com OBESIDADE 1 ! IMC: " + calculo.toFixed(2));
+        }
+		else if(calculo>=35 && calculo<39.9) {
+            alert("Você está com OBESIDADE 2 (severa)! IMC: " + calculo.toFixed(2));
         }
         else if (calculo>40)
-        alert("Você está com obesidade grave com esse IMC: " + calculo.toFixed(2));
+        alert("Você está com OBESIDADE 3 (mórbida)! IMC: " + calculo.toFixed(2));
     }
 </script>
 
@@ -112,7 +118,7 @@ http://www.tooplate.com/view/2076-zentro
     Altura (cm)<br/>
         <input type="text" id="altura" name="altura" />
     </p>
-    <p>Peso (Kg) <br />
+    <p>Peso (kg) <br />
         <input type="text" id="peso" name="peso" />
     </p>
     <p>
